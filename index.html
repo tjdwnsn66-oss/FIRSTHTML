@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>유아식 레시피 & 식단표</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>유아식 레시피 & 주간 식단표</h1>
+    <p>간단하고 영양가 있는 유아식 레시피와 한눈에 보는 주간 식단표</p>
+  </header>
+
+  <main class="container">
+    <section id="meal-plan">
+      <h2>주간 식단표 (예시)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>요일</th><th>아침</th><th>점심</th><th>간식</th><th>저녁</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>월</td><td>바나나 으깬 죽</td><td>닭고기 감자죽</td><td>요거트</td><td>야채 콩죽</td></tr>
+          <tr><td>화</td><td>쌀 미음 + 계란 노른자</td><td>당근 두부 스튜</td><td>사과 소스</td><td>연어 으깬 감자</td></tr>
+          <tr><td>수</td><td>호박 죽</td><td>쇠고기 야채죽</td><td>바나나</td><td>브로콜리 치즈 으깨기</td></tr>
+          <tr><td>목</td><td>귀리 미음</td><td>닭고기 채소볶음(연하게)</td><td>수제 과일퓨레</td><td>감자 당근 퓨레</td></tr>
+          <tr><td>금</td><td>사과 귀리죽</td><td>두부 야채죽</td><td>치즈 한 조각</td><td>호박 치킨 퓨레</td></tr>
+          <tr><td>토</td><td>고구마 으깬 것</td><td>야채 리소토(부드럽게)</td><td>요거트 과일</td><td>연어 채소죽</td></tr>
+          <tr><td>일</td><td>볶은 야채 죽</td><td>닭고기 브로스+야채</td><td>과일칩(부드럽게)</td><td>두부와 야채 퓨레</td></tr>
+        </tbody>
+      </table>
+
+      <div class="actions">
+        <button id="print-plan">식단표 인쇄</button>
+        <button id="copy-plan">클립보드로 복사</button>
+      </div>
+    </section>
+
+    <section id="recipes">
+      <h2>레시피 목록</h2>
+      <div class="recipe-list">
+        <article class="recipe" data-id="r1">
+          <h3>닭고기 감자죽</h3>
+          <p class="summary">담백하고 부드러운 감자와 닭고기 죽 (8~12개월 권장)</p>
+          <button class="toggle">상세보기</button>
+          <div class="details" hidden>
+            <h4>재료</h4>
+            <ul>
+              <li>닭가슴살 30g</li>
+              <li>감자 50g</li>
+              <li>쌀 30g</li>
+              <li>물(또는 무염 육수) 400ml</li>
+            </ul>
+            <h4>만드는 법</h4>
+            <ol>
+              <li>쌀과 감자를 깨끗이 씻어 작게 썬다.</li>
+              <li>닭가슴살을 끓는 물에 익힌 뒤 잘게 찢는다.</li>
+              <li>모든 재료를 냄비에 넣고 약한 불로 20~30분 끓여 부드럽게 만든다.</li>
+              <li>아이에게 맞는 식감이 되도록 믹서나 체에 걸러 조절한다.</li>
+            </ol>
+            <p class="note">참고: 1세 미만 아기에게는 소금, 설탕, 꿀을 주지 마세요.</p>
+          </div>
+        </article>
+
+        <article class="recipe" data-id="r2">
+          <h3>호박 죽</h3>
+          <p class="summary">비타민이 풍부한 호박을 부드럽게 조리한 죽</p>
+          <button class="toggle">상세보기</button>
+          <div class="details" hidden>
+            <h4>재료</h4>
+            <ul>
+              <li>단호박 100g</li>
+              <li>쌀 25g</li>
+              <li>물 300ml</li>
+            </ul>
+            <h4>만드는 법</h4>
+            <ol>
+              <li>단호박은 쪄서 껍질을 제거하고 으깬다.</li>
+              <li>쌀과 물을 넣고 함께 끓여 쌀이 부드러워지면 호박을 넣고 한 번 더 끓인다.</li>
+              <li>식감에 따라 으깨거나 체에 걸러 준다.</li>
+            </ol>
+            <p class="note">참고: 처음 시도할 때는 소량으로 알러지 반응을 확인하세요.</p>
+          </div>
+        </article>
+
+        <article class="recipe" data-id="r3">
+          <h3>두부 야채 퓨레</h3>
+          <p class="summary">단백질과 채소를 함께 섭취할 수 있는 부드러운 퓨레</p>
+          <button class="toggle">상세보기</button>
+          <div class="details" hidden>
+            <h4>재료</h4>
+            <ul>
+              <li>부드러운 두부 60g</li>
+              <li>당근 30g, 브로콜리 20g</li>
+              <li>물 또는 육수 약간</li>
+            </ul>
+            <h4>만드는 법</h4>
+            <ol>
+              <li>야채는 잘게 썰어 찐다.</li>
+              <li>두부와 야채를 블렌더에 넣고 원하는 농도로 갈아준다.</li>
+              <li>필요시 물이나 육수를 추가해 농도를 맞춘다.</li>
+            </ol>
+            <p class="note">참고: 소금과 양념은 최소화하세요.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="notes">
+      <h2>안전 참고사항</h2>
+      <ul>
+        <li>영유아에게 새로운 음식을 줄 때는 3일간 간격으로 알러지 여부를 확인하세요.</li>
+        <li>1세 미만은 꿀을 절대 주지 마세요.</li>
+        <li>음식은 반드시 적절한 온도(너무 뜨겁지 않게)로 제공합니다.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>제공: 유아식을 위한 간단 레시피 예시 — 영양 관련 구체적 조언은 소아과 전문의 또는 영양사와 상담하세요.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
